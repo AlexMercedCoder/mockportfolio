@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title: 'Poppins', sans-serif;
+    --main: 'Playfair Display', serif;
+    --primary: navy;
+    --secondary: crimson;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+    color: var(--primary)
+}
+
+/* ******HEADER****** */
+
+header nav {
+    display: flex;
+    width: 90%;
+    background-color: var(--primary);
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header nav h1 {
+    color: white
+}
+
+header nav #menu {
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+
+header nav div a {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+}
+
+header nav div a article {
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+/* ******MAIN STYLES****** */
+
+main h2 {
+    text-align: center;
+}
