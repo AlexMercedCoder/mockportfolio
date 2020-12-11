@@ -29,6 +29,10 @@ header nav {
     justify-content: space-between;
 }
 
+header nav #sandwhich {
+    display: none;
+}
+
 header nav h1 {
     color: white
 }
@@ -54,4 +58,47 @@ header nav div a article {
 
 main h2 {
     text-align: center;
+}
+
+.img {
+    max-width: 300px;
+  }
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px auto;
+}
+
+::part(body) {
+    display: flex;
+    justify-content: center;
+}
+
+sl-button::part(base){
+    margin: 6px;
+}
+
+sl-button-group::part(base){
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+@media screen and (max-width: 500px){
+    header nav #menu {
+        display: none
+    }
+
+    header nav #sandwhich {
+        display: block;
+    }
+
+    header nav #menu {
+        color: white;
+        padding: 5px;
+        flex-direction: column;
+    }
 }
